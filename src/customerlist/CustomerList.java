@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author Andrew Archer
- * This program allows users to enter there information and save it to a file
+ * This program allows users to enter their information and save it to a file
  */
 public class CustomerList {
 
@@ -30,7 +30,7 @@ public class CustomerList {
         //checks to see if the user entered a int for the amount of people
         while(noError == true)  {
          try{ 
-          //contunes the program if a nt was entered   
+          //contunes the program if a int was entered   
           amountOfPeopleint=  Integer.parseInt(amountOfPeople);
           break;
          }catch (NumberFormatException nfe){
@@ -71,7 +71,7 @@ public class CustomerList {
           TimeUnit.SECONDS.sleep(5);
           System.exit(1);
          } 
-         // System.out.println(postal);
+          System.out.println(postal);
          }
          
          //checks to see if the user has entered a int at the appropriate places in the postalcode
@@ -90,7 +90,7 @@ public class CustomerList {
           System.exit(1);
          }
 
-         // System.out.println(postal);
+          System.out.println(postal);
         }
 
         String fileOut = name + "\n";
